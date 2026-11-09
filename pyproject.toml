@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 license-files = ["LICENSE"]
-dependencies = ["torch>=2.8,<3", "safetensors>=0.6,<1"]
+dependencies = ["torch>=2.8,<3", "safetensors>=0.6,<1", "numpy>=1.26,<3"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "build>=1.2"]
