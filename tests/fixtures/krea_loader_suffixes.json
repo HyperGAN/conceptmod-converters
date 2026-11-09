@@ -1,0 +1,15 @@
+{
+  "attn.wq": "attn.to_q.weight",
+  "attn.wk": "attn.to_k.weight",
+  "attn.wv": "attn.to_v.weight",
+  "attn.gate": "attn.to_gate.weight",
+  "attn.wo": "attn.to_out.0.weight",
+  "attn.qknorm.qnorm.scale": "attn.norm_q.weight",
+  "attn.qknorm.knorm.scale": "attn.norm_k.weight",
+  "mlp.gate": "ff.gate.weight",
+  "mlp.up": "ff.up.weight",
+  "mlp.down": "ff.down.weight",
+  "prenorm.scale": "norm1.weight",
+  "postnorm.scale": "norm2.weight",
+  "mod.lin": "scale_shift_table"
+}

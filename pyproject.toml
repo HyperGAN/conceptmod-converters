@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conceptmod-converters"
+version = "0.1.0"
+description = "Independent CPU tools for PEFT and ordinary LoRA format conversion"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["torch>=2.8,<3", "safetensors>=0.6,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1.2"]
+integration = ["huggingface-hub>=0.34,<1"]
+
+[project.urls]
+Source = "https://github.com/HyperGAN/conceptmod-converters"
+
+[project.scripts]
+conceptmod-convert = "conceptmod_converters.convert:main"
+
+[tool.setuptools.packages.find]
+include = ["conceptmod_converters*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+markers = ["integration: explicitly requested ComfyUI or Hub integration"]
