@@ -21,6 +21,9 @@ behavior. YuE2 details are in [docs/yue2-lora-conversion.md](docs/yue2-lora-conv
 
 ## Validation
 
+The CPU workflow builds and installs a wheel, then runs the offline tests from
+a temporary directory with importlib mode so the checkout cannot shadow it.
+
 ```bash
 python -m pip install -e '.[dev]'
 CUDA_VISIBLE_DEVICES='' python -m pytest -q
@@ -41,7 +44,7 @@ never clone ComfyUI. Hub slider checks additionally require
 ## Origin
 
 Extracted from [HyperGAN/conceptmod](https://github.com/HyperGAN/conceptmod),
-commit `9a8a0c7f85c767a9222114d5d73706d85a2910f5`. Tensor mappings and
+commit `70f0cb2632190388eb4028ef80066558259494fc`. Tensor mappings and
 conversion computations were retained. The original MIT attribution is in
 [LICENSE](LICENSE); transferred sources and fixtures are listed in
 [docs/origin.md](docs/origin.md).

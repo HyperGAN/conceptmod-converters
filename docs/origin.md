@@ -2,7 +2,7 @@
 
 Source: https://github.com/HyperGAN/conceptmod
 
-Commit: `9a8a0c7f85c767a9222114d5d73706d85a2910f5`
+Commit: `70f0cb2632190388eb4028ef80066558259494fc`
 
 Original MIT copyright is preserved in `LICENSE`.
 
